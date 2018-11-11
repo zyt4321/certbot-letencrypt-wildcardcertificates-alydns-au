@@ -1,11 +1,9 @@
-#!/usr/bin/env python
 # coding:utf-8
 
 import base64
 import urllib
 import hmac
 import hashlib
-import pytz
 import time
 import random
 import string
