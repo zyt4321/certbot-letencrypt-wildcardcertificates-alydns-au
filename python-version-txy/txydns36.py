@@ -129,10 +129,10 @@ if __name__ == '__main__':
 
     myDns = TxyDns(SecretId, SecretKey, certbot_domain)
     data = myDns.describe_domain_records()
-    record_list = data["data"]["records"]
-    if record_list:
-        for item in record_list:
-            if acme_challenge == item['name']:
-                myDns.delete_domain_record(item['id'])
+    # record_list = data["data"]["records"]
+    # if record_list:
+    #     for item in record_list:
+    #         if acme_challenge == item['name']:
+    #             myDns.delete_domain_record(item['id'])
 
     myDns.add_domain_record("TXT", acme_challenge, certbot_validation)
