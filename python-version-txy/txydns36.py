@@ -11,8 +11,8 @@ import json
 from urllib import request
 from sys import argv
 
-SecretId = "AKIDOdgU3M5Dl47vTlvZ6NO9j37va5PWG1Ui"
-SecretKey = "7yaw2sSnshGZbMq40g6F8k59wVotlNAj"
+SecretId = "Your SecretId"
+SecretKey = "Your SecretKey"
 URL = "cns.api.qcloud.com/v2/index.php?"
 
 class TxyDns:
